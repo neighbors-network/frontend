@@ -1,8 +1,11 @@
 import React from "react";
 
-export function PageTemplateComponent(): ReturnType<React.FC> {
-    return (
-        <div>
-        </div>
-    );
-}
+export interface PageTemplateComponentProps {}
+
+const PageTemplateComponent: React.FC<PageTemplateComponentProps> = () => (
+    <div>
+        Page Template
+    </div>
+);
+
+export default PageTemplateComponent;
